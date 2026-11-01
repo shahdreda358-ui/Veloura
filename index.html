@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final-Project-J.S</title>
+    <link rel="icon" href="./Assests/Images/Upper.jpg">
+    <!-- Font-Awesom -->
+    <link rel="stylesheet" href="./Styles/all.min.css">
+    <!-- Main.Css -->
+    <link rel="stylesheet" href="./Styles/style.css">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="./Styles/bootstrap.min.css">
+    <!-- Splide-Script -->
+    <link rel="stylesheet" href="./Styles/splide.min.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <div class="Info d-flex justify-content-between align-items-center py-2 px-5 fw-semibold">
+            <div class="d-flex justify-content-center align-items-center gap-3">
+                <div
+                    class="drop-down-box py-2 d-flex align-items-center gap-1 border-end border-dark-subtle pe-3 position-relative">
+                    <img src="./Assests/Images/EUR Flag.svg" alt="">
+                    <span>EUR</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="drop-down position-absolute top-100 start-0  bg-white rounded-2 shadow-lg ">
+                        <div class="d-flex align-items-center justify-content-start py-2 gap-2 ps-3 ">
+                            <img src="./Assests/Images/Canada.svg" alt="">
+                            <span>Canada</span>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-start py-2 gap-2 ps-3">
+                            <img src="./Assests/Images/USA.svg" alt="">
+                            <span>USA</span>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-start py-2 gap-2 ps-3">
+                            <img src="./Assests/Images/Japan.svg" alt="">
+                            <span>Japan</span>
+                        </div>
+                    </div>
+                    <div class="Links ps-2 d-flex align-items-center gap-2">
+                        <a href="#">Gift Cards</a>
+                        <a href="#">ShowRooms</a>
+                        <a href="#">About US</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="d-flex align-items-center gap-2 border-secondary-subtle pe-3">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+1 234 567 890</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <img src="./Assests/Images/wd-furniture-contact-expert-65x22.png">
+                    <span class="text-capitalize">Contact With An Expert</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="px-5 py-3">
+            <div class="d-flex gap-4 justify-content-between align-items-center">
+                <div class="list d-none" data-bs-toggle="collapse" data-bs-target="#categoriesList" role="button">
+                    <i class="fa-solid fa-list-ul icon"></i>
+                </div>
+                <div class="logo">
+                    <img src="./Assests/Images/Logo.jpg" alt="Logo">
+                </div>
+
+                <div class="Search-Box flex-grow-1 position-relative">
+                    <input type="text" id="Main-Search-Input" placeholder="Search for products"
+                        class="w-100 py-2 px-5 rounded-5 border-2 border-0 shadow">
+                    <i class="search-icon text-secondary position-absolute top-50 start-0 fa-solid fa-magnifying-glass start-0 top-50"
+                        style="transform: translateY(-50%) translateX(50%); cursor: pointer;"></i>
+                    <div id="Search-Result" class="d-none p-3 d-flex flex-column gap-1 bg-white rounded-2"></div>
+                </div>
+                <div class="Actions d-flex justify-content-center align-items-center gap-2">
+
+                    <div class="compare shadow">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                    <div class="wish-list shadow">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="log-in shadow">
+                        <i class="fa-solid fa-user"></i>
+                        <span>LogIn \ Register</span>
+                    </div>
+                    <div class="cart shadow bg-black text-white" role="button" tabindex="0"
+                        aria-label="Open shopping cart">
+                        <i class=" icon fa-solid fa-cart-shopping"></i>
+                        <span>$0.00</span>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="desktop-category-bar">
+            <div class="icons d-flex justify-content-center align-items-center gap-3">
+                <div class="num"><img src="./Assests/Images/new.jpg"><span>New</span></div>
+                <div class="num"><img src="./Assests/Images/Skin-Care.svg"><span>SkinCare</span></div>
+                <div class="num"><img src="./Assests/Images/istockphoto-1418265708-612x612.jpg"><span>Makeup</span>
+                </div>
+                <div class="num"><img src="./Assests/Images/67cacac89913d15d0b8d1fbc5424a629.jpg"><span>Korean</span>
+                </div>
+                <div class="num"><img src="./Assests/Images/Brush.jpg"><span>Brushs</span></div>
+                <div class="num"><img src="./Assests/Images/Perfums.jpg"><span>Perfumes</span></div>
+                <div class="num"><img src="./Assests/Images/Cosmatics.jpg"><span>Cosmatics</span></div>
+                <div class="num"><img src="./Assests/Images/Nails.jpg"><span>Nails</span></div>
+                <div class="num"><img src="./Assests/Images/Hair.jpg"><span>Hair</span></div>
+                <div class="num"><img src="./Assests/Images/Sales.jpg"><span>Sales</span></div>
+                <div class="num"><img src="./Assests/Images/Gift.jpg"><span>Gifts</span></div>
+            </div>
+
+            <div class="Free rounded-5 d-flex justify-content-center align-items-center py-1 mb-3">
+                <span>Free shipping for all orders of $1.300</span>
+            </div>
+        </div>
+
+        <div id="categoriesList" class="collapse mobile-category-menu">
+            <div class="icons d-flex justify-content-center align-items-center gap-3">
+                <div class="num"><img src="./Assests/Images/new.jpg"><span>New</span></div>
+                <div class="num"><img src="./Assests/Images/Skin-Care.svg"><span>SkinCare</span></div>
+                <div class="num"><img src="./Assests/Images/istockphoto-1418265708-612x612.jpg"><span>Makeup</span>
+                </div>
+                <div class="num"><img src="./Assests/Images/67cacac89913d15d0b8d1fbc5424a629.jpg"><span>Korean</span>
+                </div>
+                <div class="num"><img src="./Assests/Images/Brush.jpg"><span>Brushs</span></div>
+                <div class="num"><img src="./Assests/Images/Perfums.jpg"><span>Perfumes</span></div>
+                <div class="num"><img src="./Assests/Images/Cosmatics.jpg"><span>Cosmatics</span></div>
+                <div class="num"><img src="./Assests/Images/Nails.jpg"><span>Nails</span></div>
+                <div class="num"><img src="./Assests/Images/Hair.jpg"><span>Hair</span></div>
+                <div class="num"><img src="./Assests/Images/Sales.jpg"><span>Sales</span></div>
+                <div class="num"><img src="./Assests/Images/Gift.jpg"><span>Gifts</span></div>
+            </div>
+        </div>
+
+    </header>
+    <!-- Header End -->
+    <main id="shop">
+        <!-- Hero-Start -->
+        <section class="Hero position-relative">
+            <button id="prev-arrow" class="position-absolute border-0 rounded-circle p-1 bg-white fs-2">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="next-arrow" class="position-absolute border-0 rounded-circle p-1 bg-white fs-2">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div
+                class="hero-Pagination position-absolute p-2 bg-white shadow d-flex align-items-center gap-2 rounded-pill">
+                <span data-slide="0" class="active"></span>
+                <span data-slide="1"></span>
+                <span data-slide="2"></span>
+            </div>
+
+
+            <section class="splide Hero-Slide" aria-label="Makeup Products">
+                <div class="splide__track">
+
+                    <ul class="splide__list">
+
+                        <li class="splide__slide">
+                            <div class="Hero-Slide border position-relative">
+                                <img src="./Assests/Images/06f0cde94659b5c3050f089b96547664.jpg"
+                                    class="w-100 h-100 position-absolute top-0 start-0">
+                                <div
+                                    class="content w-75 mx-auto h-100 d-flex flex-column align-items-start justify-content-evenly">
+                                    <div class="  top-content d-flex justify-content-center align-items-center gap-3">
+                                        <div class="p-1 slide-icon">
+                                            <img src="./Assests/Images/Brush-one.jpg">
+                                        </div>
+                                        <p>Discover more Products <br>in the <span>Makeup</span> Category</p>
+                                    </div>
+                                    <div class=" bottom-content fs-1 Author">
+                                        <p class="">Terracotta Vase</p>
+                                        <div class="d-flex align-items-center gap-2 mb-3">
+                                            <span>by</span>
+                                            <img src="./Assests/Images/char(3).jpg">
+                                            <span>Country Henry</span>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                            <button class="slide-btn">Shop Now</button>
+                                            <span>$8.202</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="splide__slide">
+                            <div class="Hero-Slide border position-relative">
+                                <img src="./Assests/Images/6b7ae0682445aa60614f4b0d5cf59c64.jpg"
+                                    class="w-100 h-100 position-absolute top-0 start-0">
+                                <div
+                                    class="content w-75 mx-auto h-100 d-flex flex-column align-items-start justify-content-evenly">
+                                    <div class=" top-content d-flex justify-content-center align-items-center gap-3">
+                                        <div class="p-1 slide-icon">
+                                            <img src="./Assests/Images//logo skin.jpg">
+                                        </div>
+                                        <p>Discover more Products <br>in the <span>Skin-Care</span> Category</p>
+                                    </div>
+                                    <div class=" bottom-content fs-1 Author">
+                                        <p class="">Upholstered chair</p>
+                                        <div class="d-flex align-items-center gap-2 mb-3">
+                                            <span>by</span>
+                                            <img src="./Assests/Images/char(2).jpg">
+                                            <span>Esther Howard</span>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                            <button class="slide-btn">Shop Now</button>
+                                            <span>$8.202</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <div class="Hero-Slide border position-relative">
+                                <img src="./Assests/Images/Korean.jpg"
+                                    class="w-100 h-100 position-absolute top-0 start-0">
+                                <div
+                                    class="content w-75 mx-auto h-100 d-flex flex-column align-items-start justify-content-evenly">
+                                    <div class=" top-content d-flex justify-content-center align-items-center gap-3">
+                                        <div class="p-1 slide-icon">
+                                            <img src="./Assests/Images/Korean.jpg">
+                                        </div>
+                                        <p>Discover more Products <br>in the <span>Korean Cosmatics</span> Category</p>
+                                    </div>
+                                    <div class=" bottom-content fs-1 Author">
+                                        <p class="">Sectional fabric sofa</p>
+                                        <div class="d-flex align-items-center gap-2 mb-3">
+                                            <span>by</span>
+                                            <img src="./Assests/Images/char(1).jpg">
+                                            <span>Ramon Esteve</span>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                            <button class="slide-btn">Shop Now</button>
+                                            <span>$289.758</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+        </section>
+        <!-- Hero-End -->
+
+        <section class="Categories py-5">
+            <div class="container">
+                <h2 class="fw-bold">Our Brands Makeup Categories</h2>
+                <p class="mt-4 text-secondary fs-14">Lots of new <span class="text-danger fs-6">Makeup</span> products
+                    and product collections</p>
+                <div class="cat-box my-5">
+
+                    <div>
+                        <div class="cat-ball shadow">
+                            <img src="./Assests/Images/Dior.jpg" alt="">
+                            <div>
+                                <p class="my-1 bg-white fw-semibold py-3 px-3 rounded-pill">Dior</p>
+                                <span class="fs-16 text-light">390 Products</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div class="cat-ball shadow">
+                            <img src="./Assests/Images/Chanel.jpg" alt="">
+                            <div>
+                                <p class="my-1 bg-white fw-semibold py-3 px-3  rounded-pill">Chanel</p>
+                                <span class="fs-16 text-light">489 Products</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div class="cat-ball shadow">
+                            <img src="./Assests/Images/Elfe.jpg" alt="">
+                            <div>
+                                <p class="my-1 bg-white fw-semibold py-3 px-3  rounded-pill">Elfe</p>
+                                <span class="fs-16 text-light">599 Products</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="cat-ball shadow">
+                            <img src="./Assests/Images/Sephora.jpg" alt="">
+                            <div>
+                                <p class="my-1 bg-white fw-semibold py-3 px-3  rounded-pill">Sephore</p>
+                                <span class="fs-16 text-light">2900 Products</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="cat-ball shadow">
+                            <img src="./Assests/Images/Yves Saint Laurent Beauty.jpg" alt="">
+                            <div>
+                                <p class="my-1 bg-white fw-semibold py-3 px-3  rounded-pill">Y$S</p>
+                                <span class="fs-16 text-light">4930 Products</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="cat-ball shadow">
+                            <img src="./Assests/Images/Guerlain.jpg" alt="">
+                            <div>
+                                <p class="my-1 bg-white fw-semibold py-3 px-3  rounded-pill">Guerlain</p>
+                                <span class="fs-16 text-light">379 Products</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div class="cat-ball shadow">
+                            <img src="./Assests/Images/Givenchy Beauty.jpg" alt="">
+                            <div>
+                                <p class="my-1 bg-white fw-semibold py-3 px-3  rounded-pill">Givenchy Beauty</p>
+                                <span class="fs-16 text-light">371 Products</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="cat-ball shadow">
+                            <img src="./Assests/Images/Kiko.jpg" alt="">
+                            <div>
+                                <p class="my-1 bg-white fw-semibold py-3 px-3  rounded-pill">Kiko</p>
+                                <span class="fs-16 text-light">191 Products</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="cat-ball shadow ">
+                            <img src="./Assests/Images/Maybelline.jpg" alt="">
+                            <div>
+                                <p class="my-1 bg-white fw-semibold py-3 px-3  rounded-pill">Maybelline</p>
+                                <span class="fs-16 text-light">8493 Products</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="cat-ball shadow">
+                            <img src="./Assests/Images/Sheglam.jpg" alt="">
+                            <div>
+                                <p class="my-1 bg-white fw-semibold py-3 px-3  rounded-pill">Sheglam</p>
+                                <span class="fs-16 text-light">4833 Products</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- Categories Start-->
+        <section class="Our-New-Collection">
+            <h2 class="ps-3 gap-4">Our New Collection</h2>
+            <span class="ps-3">Discover lots of our new products</span>
+
+            <div class="new py-5">
+
+                <div class="card-image">
+                    <img src="./Assests/Images/new.jpg" alt="">
+                </div>
+
+                <div class="card-image">
+                    <img src="./Assests/Images/new(1).jpg" alt="">
+                </div>
+
+                <div class="card-image">
+                    <img src="./Assests/Images/new(2).jpg" alt="">
+                </div>
+
+                <div class="card-image">
+                    <img src="./Assests/Images/new(3).jpg" alt="">
+                </div>
+
+                <div class="card-image">
+                    <img src="./Assests/Images/new(4).jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Best Sellers Start-->
+        <!-- Best Sellers End-->
+        <section class="Best Sellers py-5">
+            <div class="container">
+                <div class="sec-header mb-5 d-flex justify-content-between">
+                    <h2 class="fw-bold">Weekly bestsellers​</h2>
+                    <div class="categories text-capitalize d-flex align-items-center gap-3 fw-semibold">
+                        <span class="active">ALL</span>
+                        <span>SkinCare</span>
+                        <span>Makeup</span>
+                        <!-- <span>Korean</span> -->
+                        <!-- <span>Brushes</span> -->
+                        <span>Perfumes</span>
+                        <span>Cosmatics</span>
+                        <!-- <span>Nails</span> -->
+                    </div>
+                </div>
+                <div class="Products-box">
+
+                </div>
+        </section>
+
+        <section class="ProductCollections py-5">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h3 class="fw-bolder mb-2">Product collections</h3>
+                    <span class="text-secondary">Explore product collections from our vendors</span>
+                </div>
+
+                <div class="collections-grid">
+                    <article class="collection-card collection-card-large" data-title="Living Room" data-tag="New arrivals" data-price="From $399" data-description="A curated mix of plush seating, wood details, and warm neutral textures for the heart of the home.">
+                        <img src="./Assests/Images/Max-1.jpg" alt="Living room collection">
+                        <button type="button" class="collection-quick-view" aria-label="View details for Living Room"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </article>
+
+                    <article class="collection-card" data-title="Dining" data-tag="Hot picks" data-price="From $299" data-description="Modern dining essentials crafted for hosting, styling, and everyday comfort with a refined finish.">
+                        <img src="./Assests/Images/Max-2.jpg" alt="Dining room collection">
+                        <button type="button" class="collection-quick-view" aria-label="View details for Dining"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </article>
+
+                    <article class="collection-card" data-title="Bedroom" data-tag="Bestsellers" data-price="From $349" data-description="Relaxed bedroom styling with soft textures, storage solutions, and timeless silhouettes.">
+                        <img src="./Assests/Images/Max-3.jpg" alt="Bedroom collection">
+                        <button type="button" class="collection-quick-view" aria-label="View details for Bedroom"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </article>
+
+                    <article class="collection-card" data-title="Decor" data-tag="Curated" data-price="From $169" data-description="Statement accents, textures, and finishing pieces that add character to every corner.">
+                        <img src="./Assests/Images/Max-4.jpg" alt="Home decor collection">
+                        <button type="button" class="collection-quick-view" aria-label="View details for Decor"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </article>
+
+                    <article class="collection-card" data-title="Office" data-tag="Workspace" data-price="From $279" data-description="Elegant work-from-home pieces built for productivity and comfort in a polished finish.">
+                        <img src="./Assests/Images/Max-5.jpg" alt="Office collection">
+                        <button type="button" class="collection-quick-view" aria-label="View details for Office"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </article>
+
+                    <article class="collection-card collection-card-wide" data-title="Storage" data-tag="Organize" data-price="From $219" data-description="Smart storage ideas that combine clean lines with practical organization for modern living.">
+                        <img src="./Assests/Images/Max-6.jpg" alt="Storage collection">
+                        <button type="button" class="collection-quick-view" aria-label="View details for Storage"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </article>
+
+                    <article class="collection-card" data-title="Lighting" data-tag="Soft glow" data-price="From $149" data-description="Ambient lighting and sculptural forms that frame the room with warmth and character.">
+                        <img src="./Assests/Images/Max-7.jpg" alt="Lighting collection">
+                        <button type="button" class="collection-quick-view" aria-label="View details for Lighting"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </article>
+
+                    <article class="collection-card" data-title="Outdoor" data-tag="Fresh" data-price="From $239" data-description="Fresh outdoor pieces made to bring comfort, coverage, and texture to open-air moments.">
+                        <img src="./Assests/Images/Max-8.jpg" alt="Outdoor collection">
+                        <button type="button" class="collection-quick-view" aria-label="View details for Outdoor"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="collection-info-panel" id="collectionInfoPanel" aria-live="polite">
+            <div class="collection-info-box">
+                <button type="button" class="collection-info-close" id="collectionInfoClose" aria-label="Close details">×</button>
+                <div class="collection-info-image-wrap">
+                    <img src="" alt="" id="collectionInfoImage">
+                </div>
+                <div class="collection-info-content">
+                    <span class="collection-info-tag" id="collectionInfoTag"></span>
+                    <h4 id="collectionInfoTitle"></h4>
+                    <p id="collectionInfoPrice"></p>
+                    <p id="collectionInfoDescription"></p>
+                    <a href="./shop.html" class="collection-info-link">Shop collection</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Product Details-Start-->
+    <div class="Pro-Details-Layout justify-content-center align-items-center vh-100">
+        <div class="Pro-Details-Box bg-white rounded-2 position-relative">
+            <button id="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="d-flex justify-content-center rounded-2 " id="Details-Content">
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Product Details-End  -->
+
+    <!-- Cart-Start -->
+    <div class="Cart-LayOut">
+        <div class="Cart">
+            <div class="d-flex justify-content-between px-1 py-3 align-items-between">
+                <h4>Shopping-Cart</h4>
+                <button id="CloseCart" class="border-0 fs-5">
+                    <i class="fa-solid fa-xmark"></i>
+                    <span>Close</span>
+                </button>
+            </div>
+            <div class="Cart-Box d-flex flex-column align-items-center justify-content-start gap-2 py-3 border-danger"
+                id="cart-box">
+                <div class="fs-1 opacity-50">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <p class="fw-bold">No Products in The Cart.</p>
+                <a href="#shop" class="Shop-Link text-decoration-none rounded-pill py-2 px-4">Return To Shop</a>
+
+            </div>
+            <div class="d-flex justify-content-center p-2">
+                <a href="./shop.html" class="btn btn-warning text-white fw-semibold rounded-pill px-4 py-2 shadow-sm">
+                    Go To Shop
+                </a>
+            </div>
+            <div class="cart-total d-flex justify-content-between align-items-center gap-3">
+                <span class="cart-total-label">Total Price</span>
+                <span class="cart-total-value" id="Cart-Total-Box">$0.00</span>
+            </div>
+        </div>
+    </div>
+    <!-- Cart-End -->
+    <!-- Alert-Start -->
+    <div class="alert-layout">
+        <div class="alert-box py-5 rounded-2 d-flex flex-column align-items-center gap-3">
+            <div class="alert-icon fs-2 border text-success border-3 p-3 rounded-circle">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div
+                class="alert-message text-capitalize text-center w-100 d-flex align-items-center gap-3 flex-column fs-3">
+                <span id="alert-pro-name" class="text-orange fs-3">(ProducrName)</span>
+                <p id="alert-message-box" class="fs-4">
+                    Product Is Added Successfully<br> To Your Cart
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <!-- Alert-End -->
+    <div class="delete-confirmation-layout" aria-hidden="true">
+        <div class="delete-confirmation-box" role="dialog" aria-modal="true"
+            aria-labelledby="delete-confirmation-title">
+            <div class="delete-confirmation-icon">
+                <i class="fa-solid fa-trash-can"></i>
+            </div>
+            <h2 id="delete-confirmation-title">Remove this product?</h2>
+            <p>Are you sure you want to remove <strong id="delete-confirmation-product"></strong> from your cart?</p>
+            <div class="delete-confirmation-actions">
+                <button type="button" class="cancel-delete-product">Cancel</button>
+                <button type="button" class="confirm-delete-product">Delete</button>
+            </div>
+        </div>
+    </div>
+    <!-- BootStrap Script -->
+    <script src="./Scripts/bootstrap.bundle.min.js"></script>
+    <!-- JQ-Script -->
+    <script src="./Scripts/jq.js"></script>
+    <!-- Cart-Price-Logic -->
+    <script src="./Scripts/shop.js"></script>
+    <!-- Splide-Script -->
+    <script src="./Scripts/splide.min.js"></script>
+    <!-- Main-Script -->
+    <script src="./Scripts/main.js"></script>
+
+</body>
+
+</html>

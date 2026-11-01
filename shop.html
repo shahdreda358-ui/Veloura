@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final-Project-J.S</title>
+    <link rel="icon" href="./Assests/Images/Upper.jpg">
+    <link rel="stylesheet" href="./Styles/all.min.css">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="./Styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./Styles/splide.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="Info d-flex justify-content-between align-items-center py-2 px-5 fw-semibold">
+            <div class="d-flex justify-content-center align-items-center gap-3">
+                <div
+                    class="drop-down-box py-2 d-flex align-items-center gap-1 border-end border-dark-subtle pe-3 position-relative">
+                    <img src="./Assests/Images/EUR Flag.svg" alt="">
+                    <span>EUR</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="drop-down position-absolute top-100 start-0 bg-white rounded-2 shadow-lg">
+                        <div class="d-flex align-items-center justify-content-start py-2 gap-2 ps-3">
+                            <img src="./Assests/Images/Canada.svg" alt="">
+                            <span>Canada</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-start py-2 gap-2 ps-3">
+                            <img src="./Assests/Images/USA.svg" alt="">
+                            <span>USA</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-start py-2 gap-2 ps-3">
+                            <img src="./Assests/Images/Japan.svg" alt="">
+                            <span>Japan</span>
+                        </div>
+                    </div>
+                    <div class="Links ps-2 d-flex align-items-center gap-2">
+                        <a href="#">Gift Cards</a>
+                        <a href="#">ShowRooms</a>
+                        <a href="#">About US</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="d-flex align-items-center gap-2 border-secondary-subtle pe-3">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+1 234 567 890</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <img src="./Assests/Images/wd-furniture-contact-expert-65x22.png">
+                    <span class="text-capitalize">Contact With An Expert</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="px-5 py-3">
+            <div class="d-flex gap-4 justify-content-between align-items-center">
+                <div class="list d-none" data-bs-toggle="collapse" data-bs-target="#categoriesList" role="button">
+                    <i class="fa-solid fa-list-ul icon"></i>
+                </div>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./Assests/Images/Logo.jpg" alt="Logo">
+                    </a>
+                </div>
+                <div class="Search-Box flex-grow-1 position-relative">
+                    <input type="text" id="Main-Search-Input" placeholder="Search for products"
+                        class="w-100 py-2 px-5 rounded-5 border-2 border-0 shadow">
+                    <i class="search-icon text-secondary position-absolute top-50 start-0 fa-solid fa-magnifying-glass"
+                        style="transform: translateY(-50%) translateX(50%); cursor: pointer;"></i>
+                    <div id="Search-Result" class=" d-none p-3 d-flex flex-column gap-1 bg-white rounded-2">
+                      
+                    </div>
+                </div>
+                <div class="Actions d-flex justify-content-center align-items-center gap-2">
+                    <div class="compare shadow">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                    <div class="wish-list shadow">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="log-in shadow">
+                        <i class="fa-solid fa-user"></i>
+                        <span>LogIn \ Register</span>
+                    </div>
+                    <div class="cart shadow bg-black text-white" role="button" tabindex="0"
+                        aria-label="Open shopping cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="desktop-category-bar">
+            <div class="icons d-flex justify-content-center align-items-center gap-3 ms-5">
+                <div class="num"><img src="./Assests/Images/new.jpg"><span>New</span></div>
+                <div class="num"><img src="./Assests/Images/Skin-Care.svg"><span>SkinCare</span></div>
+                <div class="num"><img src="./Assests/Images/istockphoto-1418265708-612x612.jpg"><span>Makeup</span>
+                </div>
+                <div class="num"><img src="./Assests/Images/67cacac89913d15d0b8d1fbc5424a629.jpg"><span>Korean</span>
+                </div>
+                <div class="num"><img src="./Assests/Images/Brush.jpg"><span>Brushs</span></div>
+                <div class="num"><img src="./Assests/Images/Perfums.jpg"><span>Perfumes</span></div>
+                <div class="num"><img src="./Assests/Images/Cosmatics.jpg"><span>Cosmatics</span></div>
+                <div class="num"><img src="./Assests/Images/Nails.jpg"><span>Nails</span></div>
+                <div class="num"><img src="./Assests/Images/Hair.jpg"><span>Hair</span></div>
+                <div class="num"><img src="./Assests/Images/Sales.jpg"><span>Sales</span></div>
+                <div class="num"><img src="./Assests/Images/Gift.jpg"><span>Gifts</span></div>
+            </div>
+
+            <div class="Free rounded-5 d-flex justify-content-center align-items-center py-1 mb-3">
+                <span>Free shipping for all orders of $1.300</span>
+            </div>
+        </div>
+
+        <div id="categoriesList" class="collapse mobile-category-menu">
+            <div class="icons d-flex justify-content-center align-items-center gap-3 ms-5">
+                <div class="num"><img src="./Assests/Images/new.jpg"><span>New</span></div>
+                <div class="num"><img src="./Assests/Images/Skin-Care.svg"><span>SkinCare</span></div>
+                <div class="num"><img src="./Assests/Images/istockphoto-1418265708-612x612.jpg"><span>Makeup</span>
+                </div>
+                <div class="num"><img src="./Assests/Images/67cacac89913d15d0b8d1fbc5424a629.jpg"><span>Korean</span>
+                </div>
+                <div class="num"><img src="./Assests/Images/Brush.jpg"><span>Brushs</span></div>
+                <div class="num"><img src="./Assests/Images/Perfums.jpg"><span>Perfumes</span></div>
+                <div class="num"><img src="./Assests/Images/Cosmatics.jpg"><span>Cosmatics</span></div>
+                <div class="num"><img src="./Assests/Images/Nails.jpg"><span>Nails</span></div>
+                <div class="num"><img src="./Assests/Images/Hair.jpg"><span>Hair</span></div>
+                <div class="num"><img src="./Assests/Images/Sales.jpg"><span>Sales</span></div>
+                <div class="num"><img src="./Assests/Images/Gift.jpg"><span>Gifts</span></div>
+            </div>
+        </div>
+
+    </header>
+    <div class="Shop-1 vh-100">
+        <img src="./Assests/Images/Shop-1.jpg" class="w-100">
+    </div>
+
+    <!-- Product start -->
+    <main>
+        <div class="container">
+            <div class="row g-0 shop-page-row">
+                <div class="col-3">
+                    <div style="padding:50px 0;" class="h-100">
+                        <div class="shop-filters bg-white p-4 shadow rounded-2 h-100">
+                            <div class="show d-flex justify-content-center align-items-center gap-1">
+                                <span>Show:</span>
+                                <div class="d-flex justify-content-center align-items-center gap-1">
+                                    <button class="show-btn active">8</button>
+                                    <span>/</span>
+                                    <button class="show-btn">12</button>
+                                    <span>/</span>
+                                    <button class="show-btn">18</button>
+                                    <span>/</span>
+                                    <button class="show-btn">24</button>
+
+
+                                </div>
+                            </div>
+                            <div class="sort my-3">
+                                <select class="form-select" id="sortInput" aria-label="Default select example">
+                                    <option selected value="Default">Default</option>
+                                    <option value="low">Price:Low To High</option>
+                                    <option value="high">Price:High To Low</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+
+
+                    <section class="shop_products min-vh-100">
+
+
+                    </section>
+                    <div class="Pagination-box d-flex justify-content-center align-items-center gap-1 py-3">
+                        <button class="pagination-btn">1</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- product end -->
+    <!-- cart-start -->
+    <div class="Cart-LayOut">
+        <div class="Cart">
+            <div class="d-flex justify-content-between px-1 py-3 align-items-between">
+                <h4>Shopping-Cart</h4>
+                <button id="CloseCart" class="border-0 fs-5">
+                    <i class="fa-solid fa-xmark"></i>
+                    <span>Close</span>
+                </button>
+            </div>
+            <div class="Cart-Box d-flex flex-column align-items-center justify-content-start gap-2 py-3 border-danger"
+                id="cart-box">
+                <div class="fs-1 opacity-50">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <p class="fw-bold">No Products in The Cart.</p>
+
+            </div>
+            <div class="d-flex justify-content-center p-2">
+                <a href="./shop.html" class="btn btn-warning text-white fw-semibold rounded-pill px-4 py-2 shadow-sm">
+                    Go To Shop
+                </a>
+            </div>
+            <div class="cart-total d-flex justify-content-between align-items-center gap-3">
+                <span class="cart-total-label">Total Price</span>
+                <span class="cart-total-value" id="Cart-Total-Box">$0.00</span>
+            </div>
+        </div>
+    </div>
+    <!-- cart-end -->
+    <!--Product Details-Start-->
+    <div class="Pro-Details-Layout justify-content-center align-items-center vh-100">
+        <div class="Pro-Details-Box bg-white rounded-2 position-relative">
+            <button id="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="d-flex justify-content-center rounded-2 " id="Details-Content">
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Alert-Start -->
+    <div class="alert-layout">
+        <div class="alert-box py-5 rounded-2 d-flex flex-column align-items-center gap-3">
+            <div class="alert-icon fs-2 border text-success border-3 p-3 rounded-circle">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div
+                class="alert-message text-capitalize text-center w-100 d-flex align-items-center gap-3 flex-column fs-3">
+                <span id="alert-pro-name" class="text-orange fs-3">(ProducrName)</span>
+                <p id="alert-message-box" class="fs-4">
+                    Product Is Added Successfully<br> To Your Cart
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <!-- Alert-End -->
+    <div class="delete-confirmation-layout" aria-hidden="true">
+        <div class="delete-confirmation-box" role="dialog" aria-modal="true"
+            aria-labelledby="delete-confirmation-title">
+            <div class="delete-confirmation-icon">
+                <i class="fa-solid fa-trash-can"></i>
+            </div>
+            <h2 id="delete-confirmation-title">Remove this product?</h2>
+            <p>Are you sure you want to remove <strong id="delete-confirmation-product"></strong> from your cart?</p>
+            <div class="delete-confirmation-actions">
+                <button type="button" class="cancel-delete-product">Cancel</button>
+                <button type="button" class="confirm-delete-product">Delete</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product Details-End  -->
+    <script src="./Scripts/bootstrap.bundle.min.js"></script>
+    <script src="./Scripts/jq.js"></script>
+    <script src="./Scripts/shop.js"></script>
+    <script src="./Scripts/splide.min.js"></script>
+    <script src="./Scripts/main.js"></script>
+</body>
+
+</html>
